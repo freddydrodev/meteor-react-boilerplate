@@ -6,12 +6,12 @@ import { BrowserRouter } from 'react-router-dom'
 import '../../ui/stylesheets/main.css'
 import App from '../../ui/App'
 
+
 const router = (
     <BrowserRouter>
         <App />
     </BrowserRouter>
 )
-
-Meteor.autorun(() => {
+Meteor.startup(() => {
     render(router, document.getElementById('root'))
 })

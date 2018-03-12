@@ -12,7 +12,7 @@ export default class App extends Component {
                     <Route path="/page-two" component={PageTwo} />
                     <Route path="/" exact render={() => <h1>Hello World</h1>} />
                     <Route render={() => <h1>404 Page Not Found</h1>} />
-                    </Switch>
+                </Switch>
             </div>
         )
     }
